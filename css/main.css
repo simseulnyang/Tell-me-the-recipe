@@ -1,0 +1,371 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: rgb(245, 193, 96);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul li {
+    list-style: none;
+}
+
+/* header */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    border-bottom: 2px solid #ddd;
+}
+
+.header-title {
+    font-family: 'Cherry Bomb One', cursive;
+}
+
+.header-title span {
+    color: red;
+}
+
+.header-title,
+.header-menu {
+    padding: 5px 20px;
+}
+
+.header-menu ul li {
+    float: left;
+    padding: 0 10px;
+}
+
+.more-btn {
+    display: none;
+}
+
+/* main, 채팅창 화면 */
+main {
+    flex-grow: 1;
+    width: 100%;
+    margin: auto;
+    font-family: 'Dongle', sans-serif;
+}
+
+.chat-contents {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+    font-size: 24px;
+}
+
+.chat-contents:nth-of-type(1) {
+    height: 80vh;
+}
+
+.chat-wrap {
+    width: 80%;
+    margin: 10px;
+    overflow: auto;
+    /* 스크롤바 숨기기 */
+    -ms-overflow-style: none; /* 인터넷 익스플로러 */
+    scrollbar-width: none; /* 파이어폭스 */
+}
+
+.chat-wrap::-webkit-scrollbar {
+    display: none; /* 크롬, 사파리, 오페라, 엣지 스크롤바 숨기기*/
+}
+
+.chatbot-answer {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+.chatbot-img {
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+}
+
+#chatbotAnswerlist li,
+#userQuestionlist li {
+    background-color: white;
+    padding: 5px 10px;
+    width: fit-content;
+    max-width: 300px;
+}
+
+#chatbotAnswerlist li {
+    border-radius: 0 15px 15px 15px;
+    margin-top: 30px;
+}
+
+#chatbotAnswerlist li + li {
+    margin-top: 10px;
+}
+
+.user-question {
+    margin-bottom: 10px;
+}
+
+#userQuestionlist li {
+    border-radius: 15px 0 15px 15px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: 20px;
+}
+
+/* form의 input, button */
+
+.chat-questionform {
+    width: 80%;
+    height: 70px;
+}
+
+.question-input {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 50px;
+    width: 100%;
+}
+
+#askRecipe {
+    margin-left: 20px;
+    width: 90%;
+    border: 0;
+    font-family: 'Dongle', sans-serif;
+    font-size: 24px;
+}
+
+.chat-button {
+    background-color: royalblue;
+    border: 0;
+    color: white;
+    font-weight: bolder;
+    font-size: 20px;
+    border-radius: 50px;
+    padding: 10px;
+    margin-left: 10px;
+    width: 8%;
+}
+
+/* footer */
+footer {
+    height: 40px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 2px solid #ddd;
+}
+
+/* 미디어 쿼리 pc-tablet-mobile */
+@media screen and (max-width: 768px) {
+    body {
+        width: 100%;
+    }
+
+    header {
+        height: 48px;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .header-title {
+        font-size: 28px;
+    }
+
+    .header-menu {
+        position: fixed;
+        top: 0;
+        right: 0;
+        padding: 50px 20px;
+        width: 40%;
+        height: 100vh;
+        background-color: rgba(245, 193, 96, 0.9);
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .header-menu ul li {
+        float: none;
+    }
+
+    .header-menu a {
+        display: block;
+        margin: auto;
+        margin-bottom: 10px;
+        padding: 12px;
+    }
+
+    .more-btn {
+        display: block;
+        position: absolute;
+        right: 12px;
+        top: 9px;
+        width: 30px;
+        height: 30px;
+        border-radius: 8px;
+        border: none;
+        background-color: transparent;
+    }
+
+    .more-btn .icon {
+        display: block;
+        width: 24px;
+        height: 24px;
+        margin: 0 auto;
+        background: url(../img/menu-burger.svg) no-repeat center;
+        background-size: contain;
+    }
+
+    .chatbot-img {
+        width: 38px;
+        height: 38px;
+        margin-right: 8px;
+    }
+
+    #chatbotAnswerlist li {
+        margin-top: 20px;
+    }
+
+    #chatbotAnswerlist li + li {
+        margin-top: 12px;
+    }
+
+    #userQuestionlist li {
+        margin-top: 12px;
+        margin-right: 12px;
+    }
+
+    .chat-contents {
+        margin: 12px;
+    }
+
+    .chat-contents,
+    #askRecipe {
+        font-size: 18px;
+    }
+
+    .chat-contents:nth-of-type(1) {
+        height: 85vh;
+    }
+
+    #askRecipe {
+        margin-left: 12px;
+    }
+    .chat-button {
+        margin-left: 4px;
+        padding: 6px;
+        font-size: 10px;
+    }
+
+    footer {
+        font-size: 13px;
+        height: 30px;
+        padding: 7px;
+        border-top: 1px solid #ddd;
+    }
+
+    .header-menu.active {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .more-btn.active .icon {
+        background: url(../img/exit.svg) no-repeat center;
+        background-size: contain;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        width: 100%;
+    }
+
+    header {
+        height: 40px;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .header-title {
+        font-size: 25px;
+    }
+
+    .header-menu a {
+        margin-bottom: 8px;
+        padding: 8px;
+        font-size: 15px;
+    }
+
+    .more-btn {
+        right: 8px;
+        top: 6px;
+        width: 24px;
+        height: 24px;
+    }
+
+    .more-btn .icon {
+        width: 18px;
+        height: 18px;
+    }
+
+    .chatbot-img {
+        width: 25px;
+        height: 25px;
+        margin-right: 4px;
+    }
+
+    #chatbotAnswerlist li {
+        margin-top: 15px;
+    }
+
+    #chatbotAnswerlist li + li {
+        margin-top: 7px;
+    }
+
+    #userQuestionlist li {
+        margin-top: 7px;
+        margin-right: 7px;
+    }
+
+    .chat-contents,
+    #askRecipe {
+        font-size: 13px;
+    }
+
+    .chat-contents:nth-of-type(1) {
+        height: 87vh;
+    }
+
+    #askRecipe {
+        margin-left: 8px;
+    }
+    .chat-button {
+        margin-left: 2px;
+        padding: 5px;
+        font-size: 7px;
+    }
+
+    footer {
+        font-size: 7px;
+        height: 25px;
+        padding: 5px;
+        border-top: 1px solid #ddd;
+    }
+}
