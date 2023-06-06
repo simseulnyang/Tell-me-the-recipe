@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./css/main.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Dongle&display=swap"
+            rel="stylesheet"
+        />
+        <title>무슨 요리를 해볼까?</title>
+    </head>
+
+    <body>
+        <header>
+            <h1 class="header-title">
+                <a href="index.html">re<span>ci</span>pe!</a>
+            </h1>
+            <!-- 반응형 nav 사이드바 -->
+            <div class="header-menu" id="menu">
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">History</a>
+                    </li>
+                    <li>
+                        <a href="#">About me</a>
+                    </li>
+                </ul>
+            </div>
+            <button class="more-btn" onclick="menuClick()">
+                <i class="icon"></i>
+            </button>
+        </header>
+        <main>
+            <div class="chat-contents">
+                <section class="chat-wrap">
+                    <!-- AI chatbot 답변 -->
+                    <div class="chatbot-answer">
+                        <!-- <a href="https://www.flaticon.com/kr/free-icons/" title="요리사 아이콘">요리사 아이콘  제작자: Freepik - Flaticon</a> -->
+                        <img
+                            class="chatbot-img"
+                            src="img/chef.png"
+                            alt="chatbot-img"
+                        />
+                        <ul id="chatbotAnswerlist">
+                            <li>어떤 레시피가 궁금하신가요?</li>
+                        </ul>
+                    </div>
+                    <!-- user 질문 -->
+                    <div class="user-question">
+                        <ul id="userQuestionlist">
+                            <li>안녕하세요.</li>
+                        </ul>
+                    </div>
+                </section>
+                <!-- 질문 입력란 -->
+                <form class="chat-questionform">
+                    <div class="question-input">
+                        <input id="askRecipe" /><button
+                            class="chat-button"
+                            id="questionBtn"
+                            type="submit"
+                        >
+                            Go
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </main>
+        <footer>
+            <p>Copyright 2023. Simseulnyang All rights reserved.</p>
+        </footer>
+        <script src="./js/custom.js"></script>
+    </body>
+</html>
