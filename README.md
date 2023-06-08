@@ -1,6 +1,7 @@
 # Tell-me-the-recipe
+귀여운 챗봇에게 레시피를 질문해보세요! 재료 및 요리 방법을 세세하게 알려줄 겁니다!
 
-배포 URL
+### 배포 URL
  - https://simseulnyang.github.io/Tell-me-the-recipe/
 
 ## 진행중인 부분
