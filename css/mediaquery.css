@@ -1,0 +1,229 @@
+/* 미디어 쿼리 pc-tablet-mobile */
+@media screen and (max-width: 768px) {
+    body {
+        width: 100%;
+    }
+
+    header {
+        height: 48px;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .header-title {
+        font-size: 28px;
+    }
+
+    .header-menu {
+        position: fixed;
+        top: 0;
+        right: 0;
+        padding: 50px 20px;
+        width: 40%;
+        height: 100vh;
+        background-color: rgba(245, 193, 96, 0.7);
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .header-menu ul li {
+        float: none;
+    }
+
+    .header-menu a {
+        display: block;
+        margin: auto;
+        margin-bottom: 10px;
+        padding: 12px;
+    }
+
+    .more-btn {
+        display: block;
+        position: absolute;
+        right: 12px;
+        top: 9px;
+        width: 30px;
+        height: 30px;
+        border-radius: 8px;
+        border: none;
+        background-color: transparent;
+    }
+
+    .more-btn .icon {
+        display: block;
+        width: 24px;
+        height: 24px;
+        margin: 0 auto;
+        background: url(../img/menu-burger.svg) no-repeat center;
+        background-size: contain;
+    }
+
+    .chat-wrap {
+        width: 95%;
+    }
+
+    .chatbot-img {
+        width: 42px;
+        height: 42px;
+        margin-right: 10px;
+    }
+
+    #chatbotAnswerlist li {
+        margin-top: 20px;
+        width: 300px;
+    }
+
+    #chatbotAnswerlist li + li {
+        margin-top: 12px;
+    }
+
+    #userQuestionlist li {
+        margin-top: 12px;
+        margin-right: 12px;
+    }
+
+    .chat-contents {
+        margin: 10px;
+    }
+
+    .chatbot-answer {
+        margin-left: 0px;
+    }
+
+    .chat-contents,
+    #askRecipe {
+        font-size: 22px;
+    }
+
+    #askRecipe {
+        margin-left: 5px;
+        width: 85%;
+    }
+    .chat-button {
+        width: 10%;
+        margin-left: 4px;
+        padding: 6px;
+        font-size: 20px;
+    }
+
+    .chat-questionform {
+        width: 95%;
+        height: 75px;
+    }
+
+    .question-input {
+        margin: 10px 0px;
+    }
+
+    footer {
+        font-size: 14px;
+        height: 32px;
+        padding: 7px;
+        border-top: 1px solid #ddd;
+    }
+
+    .header-menu.active {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .more-btn.active .icon {
+        background: url(../img/exit.svg) no-repeat center;
+        background-size: contain;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        width: 100%;
+    }
+
+    header {
+        height: 46px;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .header-title {
+        font-size: 28px;
+    }
+
+    .header-menu {
+        width: 50%;
+    }
+
+    .header-menu a {
+        margin-bottom: 8px;
+        padding: 8px;
+        font-size: 15px;
+    }
+
+    .more-btn {
+        right: 8px;
+        top: 6px;
+        width: 34px;
+        height: 34px;
+    }
+
+    .more-btn .icon {
+        width: 24px;
+        height: 24px;
+    }
+
+    .chat-wrap {
+        width: 95%;
+        margin: 10px 3px;
+    }
+    .chatbot-answer {
+        margin-left: 2px;
+    }
+
+    .chatbot-img {
+        width: 32px;
+        height: 32px;
+        margin-right: 4px;
+    }
+
+    #chatbotAnswerlist li {
+        margin-top: 15px;
+        max-width: 200px;
+    }
+
+    #chatbotAnswerlist li + li {
+        margin-top: 7px;
+    }
+
+    #userQuestionlist li {
+        margin-top: 7px;
+        margin-right: 2px;
+        max-width: 200px;
+    }
+
+    .chat-contents,
+    #askRecipe {
+        font-size: 20px;
+    }
+
+    .chat-questionform {
+        width: 95%;
+        height: 55px;
+    }
+    .question-input {
+        margin: 5px 0px;
+    }
+    #askRecipe {
+        margin-left: 8px;
+        width: 82%;
+    }
+    .chat-button {
+        margin-left: 2px;
+        padding: 5px;
+        font-size: 13px;
+        width: 12%;
+    }
+
+    footer {
+        font-size: 12px;
+        height: 30px;
+        padding: 5px;
+        border-top: 1px solid #ddd;
+    }
+}
