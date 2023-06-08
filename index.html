@@ -84,7 +84,12 @@
                 <!-- 질문 입력란 -->
                 <form class="chat-questionform">
                     <div class="question-input">
-                        <input id="askRecipe" />
+                        <input
+                            id="askRecipe"
+                            placeholder="요리명만 입력해주세요. ex.간장계란밥"
+                            onfocus="this.placeholder = ''"
+                            onblur="this.placeholder='요리명만 입력해주세요. ex.간장계란밥'"
+                        />
                         <button class="chat-button" id="questionBtn">Go</button>
                     </div>
                 </form>
