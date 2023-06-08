@@ -1,0 +1,88 @@
+.history-wrap {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    height: 80vh;
+}
+
+.history-list {
+    border: 1px solid black;
+    margin-right: 5px;
+    width: 20%;
+    overflow: auto;
+    /* 스크롤바 숨기기 */
+    -ms-overflow-style: none; /* 인터넷 익스플로러 */
+    scrollbar-width: none; /* 파이어폭스 */
+}
+
+.history-list::-webkit-scrollbar {
+    display: none; /* 크롬, 사파리, 오페라, 엣지 스크롤바 숨기기*/
+}
+
+.history-searchlist {
+    margin: 15px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.history-searchname {
+    margin-bottom: 5px;
+}
+
+.history-searchtitle {
+    margin: 5px;
+    padding-left: 15px;
+    border-bottom: 2px solid black;
+    font-size: 50px;
+}
+
+.recipe-table {
+    border: 1px solid black;
+
+    margin-left: 5px;
+    width: 70%;
+}
+
+.recipe-content {
+    margin: 15px;
+    padding: 15px;
+    border: 1px solid black;
+    width: 95%;
+    height: 460px;
+}
+
+.recipe-contentbody {
+    width: 100%;
+}
+
+.recipe-col-title {
+    width: 15%;
+}
+
+.recipe-col-content {
+    width: 85%;
+}
+
+.recipe-contentbody tr td {
+    vertical-align: top;
+}
+
+.recipe-contentbody tr:nth-of-type(1) {
+    height: 15%;
+}
+
+.recipe-contentbody tr:nth-of-type(2) {
+    height: 20%;
+}
+
+.recipe-name-td1,
+.recipe-ingredient-td1,
+.recipe-steps-td1 {
+    font-size: 60px;
+}
+
+.recipe-name-td2,
+.recipe-ingredient-td2,
+.recipe-steps-td2 {
+    font-size: 30px;
+}
