@@ -1,11 +1,11 @@
 import { data } from "./data.js";
-import { printHistory } from "./history.js";
 
 let saveHistory = JSON.parse(localStorage.getItem("saveHistory"));
 
-saveHistory = [];
+saveHistory = saveHistory ?? [];
 
-let userQuestions, chatbotAnswers;
+let userQuestions = "";
+let chatbotAnswers = "";
 
 // 사용자의 질문을 저장해주는 함수
 export const userQuestion = (question) => {
@@ -34,8 +34,10 @@ export const chatbotAnswer = async (answer) => {
 //localstorage에 저장하는 함수
 export const saveRecipe = () => {
     console.log(userQuestions, chatbotAnswers);
-    saveHistory.push({ userQuestions, chatbotAnswers });
+    saveHistory.push({
+        userQuestions,
+        chatbotAnswers,
+        len: saveHistory.length
+    });
     localStorage.setItem("saveHistory", JSON.stringify(saveHistory));
-
-    printHistory();
 };
