@@ -7,7 +7,7 @@ export const showLoading = () => {
 
     const botImg = document.createElement("img");
     botImg.classList.add("chatbot-img");
-    botImg.setAttribute("src", "../img/chef.png");
+    botImg.setAttribute("src", "img/chef.png");
 
     const ul = document.createElement("ul");
     ul.setAttribute("id", "chatbotAnswerlist");
@@ -17,7 +17,7 @@ export const showLoading = () => {
 
     const spinnerImg = document.createElement("img");
     spinnerImg.classList.add("spinner-img");
-    spinnerImg.setAttribute("src", "../img/Spinner.gif");
+    spinnerImg.setAttribute("src", "img/Spinner.gif");
 
     li.append(spinnerImg);
     ul.append(li);
