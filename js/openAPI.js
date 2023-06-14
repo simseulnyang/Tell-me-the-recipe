@@ -1,6 +1,7 @@
 import { data } from "./data.js";
 import { printAnswer } from "./display.js";
 import { chatbotAnswer, saveRecipe } from "./localstorage.js";
+import { hideLoading } from "./loading.js";
 
 // openAPI url
 const url = `https://estsoft-openai-api.jejucodingcamp.workers.dev/`;
@@ -17,11 +18,13 @@ export const apiPost = async () => {
     })
         .then((res) => res.json())
         .then((res) => {
+            hideLoading();
             printAnswer(res.choices[0].message.content);
             chatbotAnswer(res.choices[0].message.content);
             saveRecipe();
         })
         .catch((err) => {
+            hideLoading();
             console.log(err);
         });
 };
