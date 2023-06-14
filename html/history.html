@@ -53,45 +53,16 @@
         <!-- //header -->
         <!-- main -->
         <main>
+            <header class="history-title">
+                <a class="history-updatebtn"> 검색한 레시피 (먼저 click!) </a>
+            </header>
             <div class="history-wrap">
-                <section class="history-list">
-                    <div class="history-list-wrap">
-                        <div class="history-searchtitle">검색한 레시피</div>
-                        <div class="history-searchlist">
-                            <ul id="historySearchName">
-                                <li class="history-searchname">토마토볶음</li>
-                            </ul>
-                        </div>
-                    </div>
+                <section class="history-list-wrap">
+                    <!-- 버튼이 구현되는 구간 : 검색한 recipe title -->
+                    <nav class="history-titlelist"></nav>
+                    <!-- //버튼이 구현되는 구간 -->
                 </section>
-                <section class="recipe-table">
-                    <article>
-                        <table class="recipe-content">
-                            <colgroup>
-                                <col class="recipe-col-title" />
-                                <col class="recipe-col-content" />
-                            </colgroup>
-                            <tbody class="recipe-contentbody">
-                                <tr class="recipe-name">
-                                    <td class="recipe-name-td1">요리명</td>
-                                    <td class="recipe-name-td2">토마토 볶음</td>
-                                </tr>
-                                <tr class="recipe-ingredient">
-                                    <td class="recipe-ingredient-td1">재료</td>
-                                    <td class="recipe-ingredient-td2">
-                                        토마토 토마토
-                                    </td>
-                                </tr>
-                                <tr class="recipe-steps">
-                                    <td class="recipe-steps-td1">방법</td>
-                                    <td class="recipe-steps-td2">
-                                        열심히 만든다
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </article>
-                </section>
+                <section class="history-recipecontents-wrap"></section>
             </div>
         </main>
         <!-- //main -->
@@ -102,6 +73,5 @@
         <!--// footer -->
         <script src="../js/history.js" type="module"></script>
         <script src="../js/drawerMenu.js"></script>
-        <script src="../js/localstorage.js>
     </body>
 </html>
