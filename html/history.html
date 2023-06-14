@@ -5,23 +5,21 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <!-- css -->
-        <link rel="stylesheet" href="../css/main.css" />
-        <link rel="stylesheet" href="../css/mediaquery.css" />
-        <link rel="stylesheet" href="../css/history.css" />
-        <!-- //css -->
-
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
             href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Dongle&display=swap"
             rel="stylesheet"
         />
+
+        <!-- css -->
+        <link rel="stylesheet" href="../css/main.css" />
+        <link rel="stylesheet" href="../css/mediaquery.css" />
+        <link rel="stylesheet" href="../css/history.css" />
         <title>무슨 요리를 해볼까?</title>
     </head>
 
     <body>
-        <!-- header -->
         <header>
             <h1 class="header-title">
                 <a href="../index.html">re<span>ci</span>pe!</a>
@@ -45,13 +43,11 @@
 
             <!-- hamburger menu icon -->
             <!-- PC 화면 크기에서는 보이지 않다가 태블릿 또는 모바일 크기에서 보여짐 -->
-            <button class="more-btn" onclick="menuClick()">
+            <button class="more-btn">
                 <i class="icon"></i>
             </button>
             <!-- //hamburger menu icon -->
         </header>
-        <!-- //header -->
-        <!-- main -->
         <main>
             <header class="history-title">
                 <a class="history-updatebtn"> 검색한 레시피 (먼저 click!) </a>
@@ -65,12 +61,9 @@
                 <section class="history-recipecontents-wrap"></section>
             </div>
         </main>
-        <!-- //main -->
-        <!-- footer -->
         <footer>
             <p>Copyright 2023. Simseulnyang All rights reserved.</p>
         </footer>
-        <!--// footer -->
         <script src="../js/history.js" type="module"></script>
         <script src="../js/drawerMenu.js"></script>
     </body>
