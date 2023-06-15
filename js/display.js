@@ -57,7 +57,6 @@ export const printAnswer = (answer) => {
 
 // form 태그 submit 시 발생하는 이벤트
 $form.addEventListener("submit", (e) => {
-    console.log($input.value);
     e.preventDefault();
     $input.value = null;
     userQuestion(question);

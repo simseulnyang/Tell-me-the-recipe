@@ -11,7 +11,6 @@ let saveHistory = JSON.parse(localStorage.getItem("saveHistory"));
 saveHistory = saveHistory ?? [];
 
 function printHistory() {
-    console.log($historyList);
 
     for (const item of saveHistory) {
         const recipeBtn = document.createElement("button");
