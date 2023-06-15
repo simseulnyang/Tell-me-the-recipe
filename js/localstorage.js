@@ -33,7 +33,6 @@ export const chatbotAnswer = async (answer) => {
 
 //localstorage에 저장하는 함수
 export const saveRecipe = () => {
-    console.log(userQuestions, chatbotAnswers);
     saveHistory.push({
         userQuestions,
         chatbotAnswers,
