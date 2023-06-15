@@ -24,6 +24,7 @@
             <h1 class="header-title">
                 <a href="../index.html">re<span>ci</span>pe!</a>
             </h1>
+
             <!-- 반응형 nav메뉴  -->
             <!-- 크기가 줄어들면 hamburger menu icon이 보여지고 클릭하면 드로워메뉴로 변경됨 -->
             <div class="header-menu" id="menu">
@@ -48,17 +49,20 @@
             </button>
             <!-- //hamburger menu icon -->
         </header>
+
         <main>
             <header class="history-title">
+                <h2 class="sr-only">step1. 먼저 클릭하는 구간</h2>
                 <a class="history-updatebtn"> 검색한 레시피 (먼저 click!) </a>
             </header>
             <div class="history-wrap">
                 <section class="history-list-wrap">
-                    <!-- 버튼이 구현되는 구간 : 검색한 recipe title -->
+                    <h2 class="sr-only">step2. 버튼 형태의 History 목록 구현되는 곳</h2>
                     <nav class="history-titlelist"></nav>
-                    <!-- //버튼이 구현되는 구간 -->
                 </section>
-                <section class="history-recipecontents-wrap"></section>
+                <section class="history-recipecontents-wrap">
+                    <h2 class="sr-only">step3. History 목록의 버튼 클릭 시 해당 recipe content 출력</h2>
+                </section>
             </div>
         </main>
         <footer>
