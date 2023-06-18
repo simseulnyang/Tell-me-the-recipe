@@ -1,3 +1,5 @@
+  @import url('https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Dongle&display=swap');
+
 * {
     padding: 0;
     margin: 0;
@@ -55,7 +57,7 @@ header {
 
 .header-title,
 .header-menu {
-    padding: 5px 20px;
+    padding: 0px 20px 10px;
 }
 
 .header-menu ul li {
@@ -203,7 +205,7 @@ main {
 
 /* footer */
 footer {
-    height: 40px;
+    height: 60px;
     padding: 10px;
     display: flex;
     align-items: center;
